@@ -1,5 +1,0 @@
-import glob
-data_files = glob.glob('s??/s??.txt')
-df_list = [pd.read_csv(d, sep="\t") for d in data_files]
-df = pd.concat(df_list)
-df.sample(8)
