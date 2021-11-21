@@ -59,6 +59,9 @@ print('Incongruent-Incompatible vs. Incongruent-Compatible t =', str(round(t, 2)
     Incongruent-Incompatible vs. Incongruent-Compatible t = 2.66  p =  0.0142
 
 <br /><br />
+<div>
+      <p>The following code demonstrates further T-tests for accuracy of the dofferent conditions in the dataset.</p>
+</div>
 
 ```python
 t, p = stats.ttest_rel(fc_sc_acc, fi_sc_acc)
@@ -81,9 +84,7 @@ print('Simon-compatible vs incompatible (Flanker congruent trials only) t =', st
     Simon-compatible vs incompatible (Flanker congruent trials only) t = 2.91  p =  0.0081
 
 <br /><br />
-<div>
-      <p>The following code demonstrates further T-tests for accuracy of the dofferent conditions in the dataset.</p>
-</div>
+
 
 ```python
 t, p = stats.ttest_rel(fi_si_acc, fc_si_acc)
