@@ -1,5 +1,4 @@
 ```python
-#Import glob package and read the desired files, making them into their own dataframe, with a sample of the data to comfirm that it worked.
 import glob
 data_files = glob.glob('s??/s??.txt')
 df_list = [pd.read_csv(d, sep="\t") for d in data_files]
