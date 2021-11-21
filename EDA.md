@@ -1,10 +1,10 @@
 <div>
       <h1>Exploratory Data Analysis</h1>
-      <p>This code demonstrates how to z transform data to make it easier to preform statistical analysis on it.</p>
 </div>
 <br /><br />
 <div>
       <h2>Z Transformation of Data</h2>
+      <p>This code demonstrates how to z transform data to standarize the data to make it easier to preform statistical analysis on it.</p>
 </div>
 ```python
 ztransforms = [np.array(stats.zscore(df[df.id == subject]['rt_ms'])) for subject in df['id'].unique()]
