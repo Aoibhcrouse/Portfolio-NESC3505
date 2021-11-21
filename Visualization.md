@@ -1,3 +1,7 @@
+<div>
+    <h1>Histogram</h1>
+    <p>This code demonstrates how to generate a histogram using matplotlib.pyplot. The histogram also displays the median and the 25th and 75th percentiles.</p> 
+</div>
 ```python
 df.T.loc['rt_ms', :].plot(kind = 'hist')
 
@@ -6,20 +10,20 @@ plt.axvline(df['rt_ms'].median(), 0, 1, color='cyan', linestyle='-')
 plt.axvline(df['rt_ms'].describe()['75%'], 0, 1, color='turquoise', linestyle='--')
 
 plt.show()
-
-#This code creates a histogram using matplotlib with the median and the 25th and 75th percentiles shown.
 ```
 
 
-
+<img src="histogram.png">
 
     
 ![png](Visualization_files/Visualization_0_0.png)
     
 
 
-
-
+<div>
+    <h1>Cumulative Distribution Plot</h1>
+    <p>This code uses the same data to generate a cumulative distribution plot which type of histogram, it also shows the median, 25th, and 75th percentiles.
+</div>
 ```python
 df.T.loc['rt_ms', :].hist(cumulative=True)
 
@@ -28,9 +32,6 @@ plt.axvline(df['rt_ms'].median(), 0, 1, color='cyan', linestyle='-')
 plt.axvline(df['rt_ms'].describe()['75%'], 0, 1, color='turquoise', linestyle='--')
 
 plt.show()
-
-#This code uses the same data to create a cumulative distribution function using matplot lib with the 
-#median and 25th and 75th percentiles shown.
 ```
 
 
@@ -41,8 +42,10 @@ plt.show()
     
 
 
-
-
+<div>
+    <h1>Altering Histograms</h1>
+    <p>This code uses the same data as before to generate another histogram. This histogram is different because the code uses the log form of the data to generate the histogram. Manipulating the data in this way makes it easier for statistical analysis. The median, 25th, and 75th percentiles are shown as well.</p>
+</div>
 ```python
 import numpy as np
 
@@ -55,21 +58,15 @@ plt.axvline(df['log_rt'].median(), 0, 1, color='cyan', linestyle='-')
 plt.axvline(df['log_rt'].describe()['75%'], 0, 1, color='turquoise', linestyle='--')
 
 plt.show()
-
-#This code uses the same data as before to transform the original histogram, using matplotlib 
-#to log form to make the data less skewed and easier to use for statistical analysis.
 ```
-
-
-
-
-    
-![png](Visualization_files/Visualization_2_0.png)
     
 
 
-
-
+<div>
+    <img src="">
+    <h1>Altering Histograms</h1>
+    <p>This code uses the same data
+</div>
 ```python
 df.T.loc['rt_inv', :].plot(kind = 'hist')
 
