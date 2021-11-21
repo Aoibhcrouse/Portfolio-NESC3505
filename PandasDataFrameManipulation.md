@@ -23,7 +23,7 @@ df.sample(8)
         text-align: right;
     }
 </style>
-<div style="width:800px; overflow-y:scroll;">
+<div style="width:650px; overflow-y:scroll;">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
