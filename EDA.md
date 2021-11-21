@@ -15,7 +15,6 @@ df['zscore'] = np.concatenate(ztransforms)
       <h2>T-tests</h2>
       <p>The following code demonstrate how to conduct T-tests on different variables within the dataset.</p>
 </div>
-<br /><br />
 ```python
 t, p = stats.ttest_rel(fc_sc, fi_sc)
 
