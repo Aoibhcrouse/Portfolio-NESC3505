@@ -267,7 +267,7 @@ df = df.assign(rt_ms=df['rt']*1000)
 ```
 
 <div>
-    <br /><br />
+    <br />
     <h1>Creating a DataFrame from another DataFrame</h1>
     <p>This code shows how to extract data from the original dataframe to create a new, sub dataframe with only the desired data.</p>
 </div>
