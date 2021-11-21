@@ -279,6 +279,7 @@ df.groupby('flankers').count()
         text-align: right;
     }
 </style>
+<div style="width:650px; overflow-y:hidden !important; overflow-x:scroll !important;">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -416,7 +417,7 @@ df.groupby('flankers').count()
   </tbody>
 </table>
 </div>
-
+</div>
 
 
 
@@ -443,6 +444,7 @@ df
         text-align: right;
     }
 </style>
+<div style="width:650px; overflow-y:hidden !important; overflow-x:scroll !important;">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -774,6 +776,7 @@ df
   </tbody>
 </table>
 <p>240 rows × 24 columns</p>
+</div>
 </div>
 
 
