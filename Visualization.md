@@ -94,7 +94,7 @@ plt.show()
 
 
     
-<img src="Displot.png"/>
+<img src="DIsplot.png"/>
     
 
 
