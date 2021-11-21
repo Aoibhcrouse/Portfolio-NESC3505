@@ -13,7 +13,7 @@ plt.show()
 ```
 
 
-<img src="~/histogram.png">
+<img src="histogram.png">
 
     
 ![png](/Visualization_files/Visualization_0_0.png)
