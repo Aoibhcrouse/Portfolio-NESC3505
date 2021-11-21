@@ -14,9 +14,6 @@ plt.show()
 
 
 <img src="histogram.png">
-
-    
-![png](/Visualization_files/Visualization_0_0.png)
     
 
 
@@ -38,7 +35,7 @@ plt.show()
 
 
     
-![png](Visualization_files/Visualization_1_0.png)
+<img src="Cumulative distribution plot.png">
     
 
 
@@ -59,13 +56,11 @@ plt.axvline(df['log_rt'].describe()['75%'], 0, 1, color='turquoise', linestyle='
 
 plt.show()
 ```
-    
+  <img src="Log Histogram.png">  
 
 
 <div>
-    <img src="">
-    <h1>Altering Histograms</h1>
-    <p>This code uses the same data
+    <p>This code uses the same data to generate a histogram with a more normal distribution enabling easier stastical analysis.</p>
 </div>
 ```python
 df.T.loc['rt_inv', :].plot(kind = 'hist')
@@ -75,72 +70,67 @@ plt.axvline(df['rt_inv'].median(), 0, 1, color='cyan', linestyle='-')
 plt.axvline(df['rt_inv'].describe()['75%'], 0, 1, color='turquoise', linestyle='--')
 
 plt.show()
-
-#This code continues to use the same data and changes the histogram, using matplotlib, so that 
-#it is even easier to use for statistical analysis with the more normal distribution.
 ```
 
 
 
 
     
-![png](Visualization_files/Visualization_3_0.png)
+<img src="INRT Histogram.png">
     
 
 
-
-
+<div>
+    <h1>Seaborn Distribution Plot</h1>
+    <p>This code continues to use the same data as before but uses the Seabron package to create a distibution plot displaying different colors for different conditiond within the dataset.</p>
+</div>
 ```python
 df=df.reset_index()
 sns.displot(data=df, x='rt_ms', hue='flankers')
 plt.show()
-
-#This code continues to use the same data and uses the seaborn package to create a 
-#distribution plot with different colors for each of the conditions within the dataset.
 ```
 
 
 
 
     
-![png](Visualization_files/Visualization_4_0.png)
+<img src="Displot.png">
     
 
 
-
-
+<div>
+    <h1>Seaborn Boxplot</h1>
+    <p>This code continues to use the same dataset to display a boxplot using the Seaborn package. This graph generates a different colored box for each condition in the dataset.</p>
+</div>
 ```python
 sns.catplot(kind='box', data=df, x='flankers', y='rt_ms')
 
 plt.show()
-
-#This code continues to use the same data and uses the seaborn package to display
-#a boxplot for the same condiditons as the above graph.
 ```
 
 
 
 
     
-![png](Visualization_files/Visualization_5_0.png)
+<img src="BoxnWhiskers plot.png">
     
 
 
-
-
+<div>
+    <h1>Seaborn Barplot</h1>
+    <p>This code continues to use the same dataset to generate a bar plot using the Seaborn package. This graph displays a different colored bar for each condition in the dataset.</p>
+</div>
 ```python
 sns.catplot(kind='bar', data=df, x='flankers', y='error')
 
 plt.show()
-
-#This code continues to use the same data and seaborn package to create a boxplot of the same conditions as above.
 ```
 
 
 
 
     
-![png](Visualization_files/Visualization_6_0.png)
+<img src="Bar plot.png">
     
 
 
