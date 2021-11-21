@@ -19,7 +19,7 @@ plt.show()
 
 <div>
     <h1>Cumulative Distribution Plot</h1>
-    <p>This code uses the same data to generate a cumulative distribution plot which type of histogram, it also shows the median, 25th, and 75th percentiles.
+    <p>This code uses the same data to generate a cumulative distribution plot which type of histogram, it also shows the median, 25th, and 75th percentiles.</p>
 </div>
 ```python
 df.T.loc['rt_ms', :].hist(cumulative=True)
