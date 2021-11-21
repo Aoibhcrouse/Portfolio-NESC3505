@@ -1,5 +1,9 @@
 <div>
-    <h1>Histogram</h1>
+    <h1>Visualization Using Matplotlib.pyplot and Seaborn</h1>
+</div>
+<br /><br />
+<div>
+    <h2>Histogram</h2>
     <p>This code demonstrates how to generate a histogram using matplotlib.pyplot. The histogram also displays the median and the 25th and 75th percentiles.</p> 
 </div>
 ```python
@@ -18,7 +22,7 @@ plt.show()
 
 
 <div>
-    <h1>Cumulative Distribution Plot</h1>
+    <h2>Cumulative Distribution Plot</h2>
     <p>This code uses the same data to generate a cumulative distribution plot which type of histogram, it also shows the median, 25th, and 75th percentiles.</p>
 </div>
 ```python
@@ -40,7 +44,7 @@ plt.show()
 
 
 <div>
-    <h1>Altering Histograms</h1>
+    <h2>Altering Histograms</h2>
     <p>This code uses the same data as before to generate another histogram. This histogram is different because the code uses the log form of the data to generate the histogram. Manipulating the data in this way makes it easier for statistical analysis. The median, 25th, and 75th percentiles are shown as well.</p>
 </div>
 ```python
@@ -81,7 +85,7 @@ plt.show()
 
 
 <div>
-    <h1>Seaborn Distribution Plot</h1>
+    <h2>Seaborn Distribution Plot</h2>
     <p>This code continues to use the same data as before but uses the Seabron package to create a distibution plot displaying different colors for different conditiond within the dataset.</p>
 </div>
 ```python
@@ -99,7 +103,7 @@ plt.show()
 
 
 <div>
-    <h1>Seaborn Boxplot</h1>
+    <h2>Seaborn Boxplot</h2>
     <p>This code continues to use the same dataset to display a boxplot using the Seaborn package. This graph generates a different colored box for each condition in the dataset.</p>
 </div>
 ```python
@@ -117,7 +121,7 @@ plt.show()
 
 
 <div>
-    <h1>Seaborn Barplot</h1>
+    <h2>Seaborn Barplot</h2>
     <p>This code continues to use the same dataset to generate a bar plot using the Seaborn package. This graph displays a different colored bar for each condition in the dataset.</p>
 </div>
 ```python
