@@ -1,5 +1,9 @@
 <div>
-    <h1>Importing Data</h1>
+    <h1>Manipulating Pandas DataFrames</h1>
+</div>
+<br /><br/>
+<div>
+    <h2>Importing Data</h2>
     <p>This code shows how to import the glob package and how to read in multiple csv files at once. The files are then concatenated to form the dataframe.</p>
 </div>
 
@@ -257,7 +261,7 @@ df.sample(8)
 
 <div>
     <br /><br />
-    <h1>Manipulating the DataFrame</h1>
+    <h2>Manipulating the DataFrame</h2>
     <p>This code shows how to use the .assign() command to take the data from a column and change it to the desired data.</p>
 </div>
 
@@ -268,7 +272,7 @@ df = df.assign(rt_ms=df['rt']*1000)
 
 <div>
     <br />
-    <h1>Creating a DataFrame from another DataFrame</h1>
+    <h2>Creating a DataFrame from another DataFrame</h2>
     <p>This code shows how to extract data from the original dataframe to create a new, sub dataframe with only the desired data.</p>
 </div>
 
@@ -435,7 +439,7 @@ df.groupby('flankers').count()
 
 <div>
     <br /><br />
-    <h1>Cleaning DataFrame</h1>
+    <h2>Cleaning DataFrame</h2>
     <p>This code demonstrates how to eliminate any unwanted data from the new sub dataframe (in the case the unwanted neutral condition).</p>
 </div>
 
