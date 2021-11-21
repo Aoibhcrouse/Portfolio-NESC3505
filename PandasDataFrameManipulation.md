@@ -266,7 +266,6 @@ df.sample(8)
 </div>
 
 ```python
-# Converting data from seconds to miliseconds.
 df = df.assign(rt_ms=df['rt']*1000)
 ```
 
