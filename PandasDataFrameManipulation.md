@@ -1,5 +1,6 @@
 <div>
-    <p>Hi Aoibh</p>
+    <h1>Importing Data</h1>
+    <p>This code shows how to import the glob package and how to read in multiple csv files at once. The files are then concatenated to form the dataframe.</p>
 </div>
 
 ```python
@@ -254,15 +255,22 @@ df.sample(8)
 </div>
 
 
+<div>
+    <h1>Manipulating the DataFrame</h1>
+    <p>This code shows how to use the .assign() command to take the data from a column and change it to the desired data.</p>
+</div>
 
 ```python
 # Converting data from seconds to miliseconds.
 df = df.assign(rt_ms=df['rt']*1000)
 ```
 
+<div>
+    <h1>Creating a DataFrame from another DataFrame</h1>
+    <p>This code shows how to extract data from the original dataframe to create a new, sub dataframe with only the desired data.</p>
+</div>
 
 ```python
-# Making a sub dataframe with only the desired data,
 df.groupby('flankers').count()
 ```
 
@@ -423,10 +431,12 @@ df.groupby('flankers').count()
 </div>
 </div>
 
-
+<div>
+    <h1>Cleaning DataFrame</h1>
+    <p>This code demonstrates how to eliminate any unwanted data from the new sub dataframe (in the case the unwanted neutral condition).</p>
+</div>
 
 ```python
-# Cleaning the new sub dataframe and getting rid of the undesired condition.
 df = df[df.flankers != 'neutral']
 df
 ```
