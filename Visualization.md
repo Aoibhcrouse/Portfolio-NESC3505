@@ -13,7 +13,7 @@ plt.show()
 ```
 
 
-<img src="histogram.png">
+<img src="histogram.png" />
     
 
 
@@ -35,7 +35,7 @@ plt.show()
 
 
     
-<img src="Cumulative distribution plot.png">
+<img src="Cumulative distribution plot.png"/>
     
 
 
@@ -56,7 +56,7 @@ plt.axvline(df['log_rt'].describe()['75%'], 0, 1, color='turquoise', linestyle='
 
 plt.show()
 ```
-  <img src="Log Histogram.png">  
+  <img src="Log Histogram.png"/>  
 
 
 <div>
@@ -76,7 +76,7 @@ plt.show()
 
 
     
-<img src="INRT Histogram.png">
+<img src="INRT Histogram.png"/>
     
 
 
@@ -94,7 +94,7 @@ plt.show()
 
 
     
-<img src="Displot.png">
+<img src="Displot.png"/>
     
 
 
@@ -112,7 +112,7 @@ plt.show()
 
 
     
-<img src="BoxnWhiskers plot.png">
+<img src="BoxnWhiskers plot.png"/>
     
 
 
@@ -130,7 +130,7 @@ plt.show()
 
 
     
-<img src="Bar plot.png">
+<img src="Bar plot.png"/>
     
 
 
