@@ -4,6 +4,7 @@
 <br /> <br/>
 <div>
     <h1>Import Packages</h1>
+    <p>Import all the needed packages for viewing a Raster Plot and PTSH.</p>
 </div>
 ```python
 import pandas as pd
@@ -370,7 +371,7 @@ plt.show()
 
 <div>
     <h2>PTSH</h2>
-    <p>A Peristimulus Histogram shows the Raster plot in a histogram format.</p>
+    <p>A Peristimulus Histogram shows the times at which a neuron fires in a histogram format.</p>
 </div>
 
 ```python
@@ -391,8 +392,14 @@ plt.show()
 <img src="PTSH.png" width="650px" />    
 
 
+<div>
+    <h2>New Data for More EEG Visualization</h2>
+    <p>We will use this next data set for the rest of the examples.</p>
+</div>
+<div>
+    <p>Import all of the packages needed for our visualization of EEG.</p>
+</div>
 ```python
-#importing all the packages
 import mne 
 mne.set_log_level('error')
 import matplotlib.pyplot as plt
@@ -401,19 +408,17 @@ import glob
 from scipy import stats
 from mne.stats import permutation_t_test
 ```
-
-
+<div>
+    <p>Read in the data and create a dictionary for the data.</p>
+</div>
 ```python
-#setting conditions to be match and mismatch
 conditions = ['Match', 'Mismatch']
 
-#reading in evoked data files
 data_dir = 'data_out/' 
 data_files = glob.glob(data_dir + '*-ave.fif')
 
 print(data_files)
 
-#Creating evoked dictionary with match and mismatch entries 
 evoked_dict = {}
 
 for idx, c in enumerate(conditions): 
@@ -426,16 +431,16 @@ print(len(evoked_dict['Match']))
     ['data_out/l2_13-ave.fif', 'data_out/l2_25-ave.fif', 'data_out/l2_21-ave.fif', 'data_out/l2_24-ave.fif', 'data_out/l2_20-ave.fif', 'data_out/l2_16-ave.fif', 'data_out/l2_22-ave.fif', 'data_out/l2_14-ave.fif', 'data_out/l2_19-ave.fif', 'data_out/l2_23-ave.fif']
     0
     10
-
-
+<div>
+    <h2>Waveform Plot</h2>
+    <p>Waveform plots show the average amplitudes of EEG compared between two different conditions.</p>
+</div>
 
 ```python
-#plotting parameters for average waveforms
 electrodes = ['Cz', 'Pz']
 color_dict = {'Match':'blue', 'Mismatch':'red'}
 line_dict = {'Match':'-', 'Mismatch':'--'}
 
-#Creating average waveform plot
 mne.viz.plot_compare_evokeds(evoked_dict,
                              combine='mean',
                              legend='lower right',
@@ -455,11 +460,11 @@ plt.show()
 ![png](Part%202_files/Part%202_2_0.png)
     
 
-
-
+<div>
+    <p>This code also shows a waveform plot, but instead of comparing the different averages, this one averages both conditions together.</p>
+</div>
 
 ```python
-# Mismatch-Match Differences
 diff_waves = []
 
 for i in range(len(data_files)): 
@@ -468,7 +473,6 @@ for i in range(len(data_files)):
                                          )
                      )
 
-# Mismatch-Match plot 
 
 contrast = 'Mismatch-Match'
 mne.viz.plot_compare_evokeds({contrast:diff_waves}, combine = 'mean', 
@@ -486,8 +490,10 @@ plt.show()
 ![png](Part%202_files/Part%202_3_0.png)
     
 
-
-
+<div>
+    <h2>Topographic Map</h2>
+    <p>A scalp topographic map shows the average amplitude across different regions of the scalp with electrodes.</p>
+</div>
 
 ```python
 # scalp topographic map plotting 
@@ -509,8 +515,9 @@ plt.show()
     
 
 
-
-
+<div>
+    <p>Permutation t-test was performed because it corrects for multiple comparisons across multiple electrodes.</p>
+</div>
 ```python
 #Permutation t-tests
 evoked_data2 = np.array([np.mean(e.get_data(tmin=.400, tmax=.600), axis=1) for e in diff_waves])
