@@ -1,3 +1,8 @@
+<style>
+  h1{color:LightBlue !important;}
+  h2{color:Cyan !important;}
+</style>
+  
 <div>
     <h1>Manipulating Pandas DataFrames</h1>
 </div>
