@@ -1,7 +1,11 @@
-<h1>MRI Data Visualiztion</h1>
-
-<h2>Import the correct packages</h2>
-
+<div>
+    <h1>MRI Data Visualiztion</h1>
+</div>
+<br /> <br />
+<div>
+    <h2>Import Packages</h2>
+    <p>This shows all of the python packages and their respective aliases needed to work with our data</p>
+</div>
 ```python
 import imageio as iio
 import scipy.ndimage as ndi
@@ -10,8 +14,10 @@ import nibabel as nib
 import numpy as np
 import matplotlib.pyplot as plt
 ```
-
-
+<div>
+    <h2>Read in Data</h2>
+    <p>This shows how to read in DICOM files using the imageio package and how to some characteristics about our data.</p>
+</div>
 ```python
 brain_img = iio.imread('data/IM-0004-0096.dcm')
 ```
@@ -81,8 +87,10 @@ brain_img.shape
 
     (256, 256)
 
-
-
+<div>
+    <h2>View Images</h2>
+    <p>This shows how to view a single MRI image when there is only one in the data.</p>
+</div>
 
 ```python
 plt.imshow(brain_img, cmap = 'bone')
@@ -97,8 +105,10 @@ plt.show()
 ![png](MRIdata_files/MRIdata_4_0.png)
     
 
-
-
+<div>
+    <h2>New Data</h2>
+    <p>This is reading in more MRI data to work with.</p>
+</div>
 
 ```python
 vol = iio.volread('data/SAG3DT1SPGR_4')
@@ -108,7 +118,9 @@ vol = iio.volread('data/SAG3DT1SPGR_4')
       Found 1 correct series.
     Reading DICOM (loading data): 184/184  (100.0%)
 
-
+<div>
+    <p>This gets the dimensions of the images that were just read in.</p>
+</div>
 
 ```python
 vol.shape
@@ -119,8 +131,9 @@ vol.shape
 
     (184, 256, 256)
 
-
-
+<div>
+    <p>This demonstrates how to view an MRI image when there are more than one in the data.</p>
+</div>
 
 ```python
 plt.imshow(vol[92], cmap = 'gray')
@@ -134,7 +147,8 @@ plt.show()
     
 ![png](MRIdata_files/MRIdata_7_0.png)
     
-
+<div>
+    <
 
 
 
