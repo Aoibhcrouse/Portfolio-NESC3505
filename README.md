@@ -1,5 +1,5 @@
 <style>
-  h1{color:Blue !important;}
+  h1{color:LightBlue !important;}
   h2{color:Cyan !important;}
 </style>
   
