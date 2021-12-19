@@ -1,5 +1,5 @@
 <div>
-    <h1>EEG Data</h1>
+    <h1>Single Unit Data</h1>
 </div>
 <br /> <br/>
 <div>
@@ -391,11 +391,12 @@ plt.show()
     
 <img src="PTSH.png" width="650px" />    
 
-
+<br />
 <div>
-    <h2>New Data for More EEG Visualization</h2>
+    <h2>EEG Data</h2>
     <p>We will use this next data set for the rest of the examples.</p>
 </div>
+<br />
 <div>
     <p>Import all of the packages needed for our visualization of EEG.</p>
 </div>
