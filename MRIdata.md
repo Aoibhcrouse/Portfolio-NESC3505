@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 ```
 <div>
     <h2>Read in Data</h2>
-    <p>This shows how to read in DICOM files using the imageio package and how to some characteristics about our data.</p>
+    <p>This shows how to read in DICOM files using the imageio package and how to show some characteristics about our data.</p>
 </div>
 ```python
 brain_img = iio.imread('data/IM-0004-0096.dcm')
