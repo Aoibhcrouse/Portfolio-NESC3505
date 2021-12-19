@@ -1,3 +1,7 @@
+<style>
+  h1{color:Purple !important;}
+  h2{color:DarkGrey !important;}
+</style>
 <div>
     <h1>Manipulating Pandas DataFrames</h1>
 </div>
