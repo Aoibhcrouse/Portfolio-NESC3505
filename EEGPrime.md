@@ -366,8 +366,7 @@ plt.show()
 
 
     
-![png](grade%26feedback_Assignment_4_Aiobh_files/grade%26feedback_Assignment_4_Aiobh_4_0.png)
-    
+<img src="Raster.png" width="650px" />    
 
 <div>
     <h2>PTSH</h2>
@@ -389,8 +388,7 @@ plt.show()
 
 
     
-![png](grade%26feedback_Assignment_4_Aiobh_files/grade%26feedback_Assignment_4_Aiobh_5_0.png)
-    
+<img src="PTSH.png" width="650px" />    
 
 
 ```python
