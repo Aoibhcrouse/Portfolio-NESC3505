@@ -141,11 +141,11 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_7_0.png)
-    
-<div>
-    
+<img src="Mri2.png" width="650px" />
 
+<div>
+    <p>This code is a variation of the one above; showing how to view multiple MRI images at once, showing every tenth image in the MRI series.</p>
+</div>
 
 
 ```python
@@ -167,10 +167,11 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_8_0.png)
-    
+<img src="MultiMri.png" width="650px" />
 
-
+<div>
+    <p>This code shows a cool vairation of the classic sagittal sections shown in MRI, using this code, we make it so that we see a horizontal section.</p>
+</div>
 
 
 ```python
@@ -183,10 +184,11 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_9_0.png)
-    
+<img src="HorizontalMri.png" width="650px" />    
 
-
+<div>
+    <p>The last image is a little difficult to make much sense of, rotating the image by 90 degrees makes it much easier to see what is going on.</p>
+</div>
 
 
 ```python
@@ -199,11 +201,12 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_10_0.png)
-    
+<img src="90horizontalMri.png" width="650px" />    
 
-
-
+<div>
+    <h2>Read in fMRI Data</h2>
+    <p>The imageio package that we have been using to view the MRI data does not work with fMRI data, so we need to use the NiBabel package to read in the fMRI data.</p>
+</div>
 
 ```python
 brain_vol = nib.load('data/language_zstat1.nii.gz')
@@ -308,8 +311,7 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_15_0.png)
-    
+<img src="BlurryMri.png" width="650px" />    
 
 
 
@@ -337,7 +339,6 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_16_0.png)
-    
+<img src="ColorMri.png" width="650px" />    
 
 
