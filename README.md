@@ -1,7 +1,7 @@
 <style>
   h1{color:Blue !important;}
   h2{color:Cyan !important;}
-<style>
+</style>
   
 <h1><b>Hi Everyone!</b></h1>
 
