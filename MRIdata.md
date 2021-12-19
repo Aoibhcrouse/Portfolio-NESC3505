@@ -102,7 +102,6 @@ plt.show()
 <img scr="mri1.png" width="650px" />    
 
 
-<br />
 <div>
     <h2>New Data</h2>
     <p>This is reading in more MRI data to work with. The output is a little scary, it is just saying what image is being uploaded and what percentage is uploaded.</p>
