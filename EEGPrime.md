@@ -457,8 +457,7 @@ plt.show()
 
 
     
-![png](Part%202_files/Part%202_2_0.png)
-    
+<img src="Waveform.png" width="650px" />    
 
 <div>
     <p>This code also shows a waveform plot, but instead of comparing the different averages, this one averages both conditions together.</p>
@@ -487,8 +486,7 @@ plt.show()
 
 
     
-![png](Part%202_files/Part%202_3_0.png)
-    
+<img src="MeanWaveform.png" width="650px" />    
 
 <div>
     <h2>Topographic Map</h2>
@@ -496,7 +494,6 @@ plt.show()
 </div>
 
 ```python
-# scalp topographic map plotting 
 mne.viz.plot_evoked_topomap(mne.grand_average(diff_waves),
                             times=0.600, average=0.200, 
                             title=contrast,
@@ -511,30 +508,25 @@ plt.show()
 
 
     
-![png](Part%202_files/Part%202_4_0.png)
-    
+<img src="Topomap.png" width="650px" />    
 
 
 <div>
     <p>Permutation t-test was performed because it corrects for multiple comparisons across multiple electrodes.</p>
 </div>
 ```python
-#Permutation t-tests
 evoked_data2 = np.array([np.mean(e.get_data(tmin=.400, tmax=.600), axis=1) for e in diff_waves])
 
 
 n_permutations = 50000
 T0, p_values, H0 = permutation_t_test(evoked_data2, n_permutations, tail=-1)
 
-#creating a new evoked set for p-values so we can create topomap
 evoked_pval = mne.EvokedArray(-np.log10(p_values)[:, np.newaxis], 
                               evoked_dict[conditions[0]][0].info, tmin= 0.
                              )
 
-# Creating a mask for the topomap 
 mask = p_values[:, np.newaxis] <= 0.05
 
-#Creating topomap across electrodes. 
 
 evoked_pval.plot_topomap(times = 0, 
                          scalings = 1, 
@@ -550,7 +542,6 @@ plt.show()
 
 
     
-![png](Part%202_files/Part%202_5_0.png)
-    
+<img src="TTopomap.png" width="650px" />    
 
 
