@@ -457,7 +457,7 @@ plt.show()
 
 
     
-<img src="Waveform.png" width="650px" />    
+<img src="WaveForm.png" width="650px" />    
 
 <div>
     <p>This code also shows a waveform plot, but instead of comparing the different averages, this one averages both conditions together.</p>
