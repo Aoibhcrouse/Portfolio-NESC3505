@@ -1,7 +1,3 @@
-<style>
-  h1{color:Blue !important;}
-  h2{color:Blue !important;}
-</style>
   <div>
     <h1>Visualization Using Matplotlib.pyplot and Seaborn</h1>
 </div>
