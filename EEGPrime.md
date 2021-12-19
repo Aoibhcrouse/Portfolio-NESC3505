@@ -1,19 +1,25 @@
+<div>
+    <h1>EEG Data</h1>
+</div>
+<br /> <br/>
+<div>
+    <h1>Import Packages</h1>
+</div>
 ```python
-# YOUR CODE HERE
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 ```
-
-
+<div>
+    <h2>Read in the Data and Manipulate it</h2>
+</div>
 ```python
-# YOUR CODE HERE
 df = pd.read_csv('crowder_data_all.csv')
 ```
-
-
+<div>
+    <p>Show a sample of what the Dataframe looks like.</p>
+</div>
 ```python
-# YOUR CODE HERE
 df.sample(20)
 ```
 
@@ -210,11 +216,11 @@ df.sample(20)
 </table>
 </div>
 
-
-
+<div>
+    <p>Filter the data to get only the desired condition.</p>
+</div>
 
 ```python
-# YOUR CODE HERE
 dat = df[(df['neuron'] == 'm1_6') & (df['condition'] == 'CTRL') & (df['contrast'] == 48)]
 dat
 ```
@@ -341,11 +347,12 @@ dat
 <p>72 rows × 5 columns</p>
 </div>
 
-
-
+<div>
+    <h2>Raster Plot</h2>
+    <p>A Raster Plot shows each spike time in the EEG and plots it in a graph.</p>
+</div>
 
 ```python
-# YOUR CODE HERE
 trial = dat['repetition']
 fig, ax = plt.subplots()
 ax.vlines(dat['spiketime'], trial - 0.4, trial + 0.4)
@@ -362,11 +369,12 @@ plt.show()
 ![png](grade%26feedback_Assignment_4_Aiobh_files/grade%26feedback_Assignment_4_Aiobh_4_0.png)
     
 
-
-
+<div>
+    <h2>PTSH</h2>
+    <p>A Peristimulus Histogram shows the Raster plot in a histogram format.</p>
+</div>
 
 ```python
-# YOUR CODE HERE
 
 fig, ax = plt.subplots()
 
