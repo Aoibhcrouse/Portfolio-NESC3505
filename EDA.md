@@ -59,7 +59,7 @@ print('Incongruent-Incompatible vs. Incongruent-Compatible t =', str(round(t, 2)
 
 <br /><br />
 <div>
-      <p>The following code demonstrates further T-tests for accuracy of the dofferent conditions in the dataset.</p>
+      <p>The following code demonstrates further T-tests for accuracy of the different conditions in the dataset.</p>
 </div>
 
 ```python
