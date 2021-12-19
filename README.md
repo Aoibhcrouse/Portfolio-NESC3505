@@ -24,7 +24,7 @@ Here is an example of [exploratory data analysis](EDA.md)
 
 Working with EEG data is very common for neural data scientists as it is one of the most inexpensive way to measure brain activity.
 
-Here is an example of [EEG data manipulation](EEG)
+Here is an example of [EEG data manipulation]
 
 <h2>Neuroimaging Data using MRI</h2>
   
