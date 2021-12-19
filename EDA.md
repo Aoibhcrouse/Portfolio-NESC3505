@@ -1,7 +1,8 @@
 <style>
-  h1{color:Blue !important;}
-  h2{color:Blue !important;}
-</style><div>
+  h1{color:Purple !important;}
+  h2{color:DarkGrey !important;}
+</style>
+<div>
       <h1>Exploratory Data Analysis</h1>
 </div>
 <br />
