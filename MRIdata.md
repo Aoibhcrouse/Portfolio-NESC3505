@@ -1,7 +1,7 @@
 <div>
     <h1>MRI Data Visualiztion</h1>
 </div>
-<br /> <br />
+<br />
 <div>
     <h2>Import Packages</h2>
     <p>This shows all of the python packages and their respective aliases needed to work with our data</p>
@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 ```python
 brain_img = iio.imread('data/IM-0004-0096.dcm')
 ```
-
+<br />
 
 ```python
 brain_img.meta
@@ -76,7 +76,7 @@ brain_img.meta
           ('sampling', (1.0, 1.0))])
 
 
-
+<br />
 
 ```python
 brain_img.shape
@@ -86,7 +86,7 @@ brain_img.shape
 
 
     (256, 256)
-
+<br />
 <div>
     <h2>View Images</h2>
     <p>This shows how to view a single MRI image when there is only one in the data.</p>
@@ -104,7 +104,7 @@ plt.show()
     
 ![png](MRIdata_files/MRIdata_4_0.png)
     
-
+<br />
 <div>
     <h2>New Data</h2>
     <p>This is reading in more MRI data to work with.</p>
@@ -117,9 +117,9 @@ vol = iio.volread('data/SAG3DT1SPGR_4')
     Reading DICOM (examining files): 1/184 files (0.5%)3/184 files (1.6%)5/184 files (2.7%)9/184 files (4.9%)13/184 files (7.1%)17/184 files (9.2%)19/184 files (10.3%)22/184 files (12.0%)25/184 files (13.6%)29/184 files (15.8%)32/184 files (17.4%)35/184 files (19.0%)38/184 files (20.7%)41/184 files (22.3%)46/184 files (25.0%)48/184 files (26.1%)55/184 files (29.9%)63/184 files (34.2%)73/184 files (39.7%)78/184 files (42.4%)88/184 files (47.8%)94/184 files (51.1%)100/184 files (54.3%)102/184 files (55.4%)104/184 files (56.5%)111/184 files (60.3%)115/184 files (62.5%)117/184 files (63.6%)125/184 files (67.9%)128/184 files (69.6%)136/184 files (73.9%)140/184 files (76.1%)144/184 files (78.3%)151/184 files (82.1%)158/184 files (85.9%)169/184 files (91.8%)183/184 files (99.5%)184/184 files (100.0%)
       Found 1 correct series.
     Reading DICOM (loading data): 184/184  (100.0%)
-
+<br />
 <div>
-    <p>This gets the dimensions of the images that were just read in.</p>
+    <p>This gets the dimensions of the data that was just read in.</p>
 </div>
 
 ```python
@@ -128,9 +128,8 @@ vol.shape
 
 
 
-
     (184, 256, 256)
-
+<br />
 <div>
     <p>This demonstrates how to view an MRI image when there are more than one in the data.</p>
 </div>
@@ -148,7 +147,7 @@ plt.show()
 ![png](MRIdata_files/MRIdata_7_0.png)
     
 <div>
-    <
+    
 
 
 
