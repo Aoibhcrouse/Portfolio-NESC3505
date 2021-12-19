@@ -22,7 +22,9 @@ import matplotlib.pyplot as plt
 brain_img = iio.imread('data/IM-0004-0096.dcm')
 ```
 <br />
-
+<div>
+    <p>This shows the metadata of our data.</p>
+</div>
 ```python
 brain_img.meta
 ```
@@ -77,7 +79,9 @@ brain_img.meta
 
 
 <br />
-
+<div>
+    <p>This shows the dimensions of our images in the data.</p>
+</div>
 ```python
 brain_img.shape
 ```
@@ -211,7 +215,9 @@ plt.show()
 ```python
 brain_vol = nib.load('data/language_zstat1.nii.gz')
 ```
-
+<div>
+    <p>This shows the metadata about the fMRI image data.</p>
+</div>
 
 ```python
 print(brain_vol.header)
@@ -262,7 +268,9 @@ print(brain_vol.header)
     intent_name     : b''
     magic           : b'n+1'
 
-
+<div>
+    <p>This is how to extract the data and store it as an array, the output is just making sure that it makes an array.</p>
+</div>
 
 ```python
 fmri_zstat_data = brain_vol.get_fdata()
@@ -275,7 +283,9 @@ type(fmri_zstat_data)
 
     numpy.ndarray
 
-
+<div>
+    <p>The dimensions of the images.</p>
+</div>
 
 
 ```python
@@ -287,7 +297,9 @@ fmri_zstat_data.shape
 
     (91, 109, 91)
 
-
+<div>
+    <p>This shows another series of images, but in the horizontal section and with fMRI images. It looks mottled due to intensity values, showing that the brain is organized into distinct functional regions.</p>
+</div>
 
 
 ```python
@@ -313,8 +325,9 @@ plt.show()
     
 <img src="BlurryMri.png" width="650px" />    
 
-
-
+<div>
+    <p>This series of fMRI images shows different colors (red and blue) to represent different activations in the brain.</p>
+</div>
 
 ```python
 fig, axs = plt.subplots(3, 3, figsize=[8, 8])
