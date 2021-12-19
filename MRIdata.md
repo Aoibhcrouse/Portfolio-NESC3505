@@ -1,3 +1,7 @@
+<h1>MRI Data Visualiztion</h1>
+
+<h2>Import the correct packages</h2>
+
 ```python
 import imageio as iio
 import scipy.ndimage as ndi
@@ -9,13 +13,11 @@ import matplotlib.pyplot as plt
 
 
 ```python
-# YOUR CODE HERE
 brain_img = iio.imread('data/IM-0004-0096.dcm')
 ```
 
 
 ```python
-# YOUR CODE HERE
 brain_img.meta
 ```
 
@@ -71,7 +73,6 @@ brain_img.meta
 
 
 ```python
-# YOUR CODE HERE
 brain_img.shape
 ```
 
@@ -84,7 +85,6 @@ brain_img.shape
 
 
 ```python
-# YOUR CODE HERE
 plt.imshow(brain_img, cmap = 'bone')
 plt.axis('off')
 plt.show()
@@ -101,7 +101,6 @@ plt.show()
 
 
 ```python
-# YOUR CODE HERE
 vol = iio.volread('data/SAG3DT1SPGR_4')
 ```
 
@@ -112,7 +111,6 @@ vol = iio.volread('data/SAG3DT1SPGR_4')
 
 
 ```python
-# YOUR CODE HERE
 vol.shape
 ```
 
@@ -125,7 +123,6 @@ vol.shape
 
 
 ```python
-# YOUR CODE HERE
 plt.imshow(vol[92], cmap = 'gray')
 plt.axis('off')
 plt.show()
@@ -146,7 +143,6 @@ fig, axs = plt.subplots(4, 4, figsize=[8, 8])
 start = int((vol.shape[0] - 160) / 2 )
 stop = int(vol.shape[0] - start)
 
-# YOUR CODE HERE
 step_size = int((stop - start)/16)
 
 for idx, img in enumerate(range(start, stop, step_size)):
@@ -168,7 +164,6 @@ plt.show()
 
 
 ```python
-# YOUR CODE HERE
 id = vol[:, :, 92]
 plt.imshow(id, cmap = 'gray')
 plt.show()
@@ -185,7 +180,6 @@ plt.show()
 
 
 ```python
-# YOUR CODE HERE
 id = vol[:, :, 92]
 plt.imshow(ndi.rotate(id, 270), cmap = 'gray')
 plt.show()
@@ -202,13 +196,11 @@ plt.show()
 
 
 ```python
-# YOUR CODE HERE
 brain_vol = nib.load('data/language_zstat1.nii.gz')
 ```
 
 
 ```python
-# YOUR CODE HERE
 print(brain_vol.header)
 ```
 
@@ -260,7 +252,6 @@ print(brain_vol.header)
 
 
 ```python
-# YOUR CODE HERE
 fmri_zstat_data = brain_vol.get_fdata()
 
 type(fmri_zstat_data)
@@ -275,7 +266,6 @@ type(fmri_zstat_data)
 
 
 ```python
-# YOUR CODE HERE
 fmri_zstat_data.shape
 ```
 
@@ -294,7 +284,6 @@ start = 20
 stop  = 61
 step = 5
 
-# YOUR CODE HERE
 step_size = int((stop - start)/8)
 
 for idx, img in enumerate(range(start, stop, step_size)):
@@ -322,7 +311,6 @@ start = 20
 stop  = 61
 step = 5
 
-# YOUR CODE HERE
 step_size = int((stop - start)/8)
 fmrix = fmri_zstat_data.max()
 fmrin = -abs(fmri_zstat_data.max())
