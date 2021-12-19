@@ -102,8 +102,7 @@ plt.show()
 
 
     
-![png](MRIdata_files/MRIdata_4_0.png)
-    
+<img scr="mri1.png" width="650px" />    
 <br />
 <div>
     <h2>New Data</h2>
