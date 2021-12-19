@@ -20,7 +20,7 @@ Another tool useful when interpreting data is using statistical analysis (like T
 
 Here is an example of [exploratory data analysis](EDA.md)
 
-<h2>EEG Data</h2>
+<h2>Single Unit and EEG Data</h2>
 
 Working with EEG data is very common for neural data scientists as it is one of the most inexpensive way to measure brain activity.
 
