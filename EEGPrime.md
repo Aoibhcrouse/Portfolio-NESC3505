@@ -3,7 +3,7 @@
 </div>
 <br /> <br/>
 <div>
-    <h1>Import Packages</h1>
+    <h2>Import Packages</h2>
     <p>Import all the needed packages for viewing a Raster Plot and PTSH.</p>
 </div>
 ```python
@@ -393,12 +393,13 @@ plt.show()
 
 <br />
 <div>
-    <h2>EEG Data</h2>
+    <h1>EEG Data</h1>
     <p>We will use this next data set for the rest of the examples.</p>
 </div>
 <br />
 <div>
-    <p>Import all of the packages needed for our visualization of EEG.</p>
+    <h2>Import Packages</h2>
+    <p>These are all of the packeages we will need.</p>
 </div>
 ```python
 import mne 
