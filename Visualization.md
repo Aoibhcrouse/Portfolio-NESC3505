@@ -1,4 +1,8 @@
-  <div>
+<style>
+  h1{color:Purple !important;}
+  h2{color:DarkGrey !important;}
+</style>
+<div>
     <h1>Visualization Using Matplotlib.pyplot and Seaborn</h1>
 </div>
 <br /><br />
