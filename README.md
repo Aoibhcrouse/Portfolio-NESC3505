@@ -24,4 +24,4 @@ Here is an example of [exploratory data analysis](EDA.md)
   
 Working as a neural data scientist, it is very important to be able to work with MRI data and know how to properly display it.
   
-Here is an example of [MRI data manipulation]
+Here is an example of [MRI data manipulation](MRIdata.md)
