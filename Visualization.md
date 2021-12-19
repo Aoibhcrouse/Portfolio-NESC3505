@@ -1,6 +1,6 @@
 <style>
   h1{color:Purple !important;}
-  h2{color:DarkGrey !important;}
+  h2{color:Grey !important;}
 </style>
 <div>
     <h1>Visualization Using Matplotlib.pyplot and Seaborn</h1>
