@@ -99,7 +99,7 @@ plt.show()
 ```
 
 
-<img scr="mri1.png" width="650px" />    
+<img src="mri1.png" width="650px" />    
 
 
 <div>
