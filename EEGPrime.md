@@ -1,3 +1,7 @@
+<style>
+  h1{color:Blue !important;}
+  h2{color:Blue !important;}
+</style>
 <div>
     <h1>Single Unit Data</h1>
 </div>
