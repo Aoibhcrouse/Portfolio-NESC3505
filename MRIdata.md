@@ -21,7 +21,6 @@ import matplotlib.pyplot as plt
 ```python
 brain_img = iio.imread('data/IM-0004-0096.dcm')
 ```
-<br />
 <div>
     <p>This shows the metadata of our data.</p>
 </div>
@@ -78,7 +77,6 @@ brain_img.meta
           ('sampling', (1.0, 1.0))])
 
 
-<br />
 <div>
     <p>This shows the dimensions of our images in the data.</p>
 </div>
@@ -90,7 +88,6 @@ brain_img.shape
 
 
     (256, 256)
-<br />
 <div>
     <h2>View Images</h2>
     <p>This shows how to view a single MRI image when there is only one in the data.</p>
