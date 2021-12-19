@@ -1,6 +1,6 @@
 <style>
   h1{color:Blue !important;}
-  h2{color:DarkBlue !important;}
+  h2{color:Blue !important;}
 </style>
   
 <div>
